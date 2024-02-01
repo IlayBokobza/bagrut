@@ -1,4 +1,4 @@
-#Bagrut Project
+# Bagrut Project
 
 ## Requirements
 For this app to run you must have nodejs, and mongodb installed.
