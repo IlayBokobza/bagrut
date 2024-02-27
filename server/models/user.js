@@ -13,6 +13,10 @@ const user = new mongoose.Schema({
         type:String,
         required:true,
     },
+    tokens:{
+        type:Array,
+        default:[],
+    }
 })
 
 const User = new mongoose.model("User",user)
