@@ -12,6 +12,7 @@ app.use(express.static('public'))
 connectToDb()
 
 app.use('/api/user',require('./routes/user'))
+app.use('/api/note',require('./routes/note'))
 
 const port = 3000
 app.listen(port,() => {

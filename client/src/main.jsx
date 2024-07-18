@@ -5,7 +5,6 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
-import Cookies from "js-cookie";
 
 const router = createBrowserRouter([
     {
@@ -23,12 +22,6 @@ const router = createBrowserRouter([
 ])
 
 async function main(){
-    if(Cookies.get("token")){
-        console.log("here")
-        const res = await fetch("/api/user/me")
-        console.log(await res.text())
-    }
-
     ReactDOM.createRoot(document.getElementById('root')).render(
         <React.StrictMode>
             <RouterProvider router={router}/>
