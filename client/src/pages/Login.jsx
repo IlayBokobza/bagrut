@@ -41,7 +41,7 @@ export default function Login(){
             name="email"
             id="email"
             type="email"
-            className="input-field" // Apply same style as home page input
+            className="input-field"
           />
         </div>
         <div className="form-group">
@@ -51,7 +51,7 @@ export default function Login(){
             name="password"
             id="password"
             type="password"
-            className="input-field" // Apply same style as home page input
+            className="input-field"
           />
         </div>
         <button className="create-button mr">Login</button>

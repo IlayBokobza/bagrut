@@ -14,11 +14,11 @@ body {
 h1,
 h3 {
   text-align: center;
-  font-size: 24px; /* 1.5rem -> 24px */
-  margin-bottom: 16px; /* 1rem -> 16px */
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
-h1{
+h1 {
   font-size: 50px;
   margin-bottom: 50px;
 }
@@ -28,24 +28,23 @@ h1{
   justify-content: center;
   align-items: stretch;
   width: 65%;
-  margin: 0 auto 20px; /* 1rem -> 16px */
+  margin: 0 auto 20px;
 }
 
 .input-field {
   width: 100%;
-  padding: 15px 20px; /* 0.75rem 1rem -> 15px 20px */
+  padding: 15px 20px;
   border: none;
   border-radius: 4px;
-  font-size: 16px; /* 1rem -> 16px */
+  font-size: 16px;
   background-color: #fff;
   resize: none;
-  /* height: 100px; No change */
 }
 
 .create-button {
   background-color: #997950;
   color: #fff;
-  padding: 15px 80px; /* 0.75rem 5rem -> 15px 80px */
+  padding: 15px 80px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -55,7 +54,7 @@ h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 16px; /* 1rem -> 16px */
+  margin-top: 16px;
 }
 
 .note {
@@ -63,11 +62,11 @@ h1{
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border: none;
   box-sizing: content-box;
-  padding: 20px 30px; /* 1rem 1.5rem -> 20px 30px */
-  font-size: 16px; /* 1rem -> 16px */
+  padding: 20px 30px;
+  font-size: 16px;
   overflow-y: auto;
-  width: 200px; /* No change */
-  height: 200px; /* No change */
+  width: 200px;
+  height: 200px;
   margin: 10px;
 }
 
@@ -91,7 +90,6 @@ h1{
   transform: rotate(-45deg);
 }
 
-/* Add styles for login and signup containers (optional) */
 .login-container,
 .signup-container {
   display: flex;
@@ -99,45 +97,42 @@ h1{
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh; /* Fill viewport height */
-  background-color: #e0d7c7; /* Match home page background */
+  min-height: 100vh;
+  background-color: #e0d7c7;
 }
 
-/* Style form elements */
 .form-group {
-  margin-bottom: 1rem; /* Add some spacing between form groups */
+  margin-bottom: 1rem;
 }
 
 label {
-  display: block; /* Display labels on separate lines */
-  margin-bottom: 5px; /* Add some space below labels */
-  font-size: 16px; /* Match font size */
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
-/* Style links */
 .link {
   display: inline-block;
-  margin-top: 1rem; /* Add some spacing above link */
-  color: #333; /* Match home page text color */
+  margin-top: 1rem;
+  color: #333;
   text-decoration: none;
-  font-size: 14px; /* Adjust link font size slightly smaller */
+  font-size: 14px;
 }
 
 .link:hover {
-  color: #997950; /* Change link color on hover */
+  color: #997950;
 }
 
-/* Style feedback message (optional) */
 .feedback {
-  color: #997950; /* Match link hover color */
-  margin-top: 1rem; /* Add some spacing above message */
-  font-size: 14px; /* Adjust feedback message font size */
+  color: #997950;
+  margin-top: 1rem;
+  font-size: 14px;
 }
 
-.d-block{
+.d-block {
   display: block;
 }
 
-.mr{
+.mr {
   margin-right: 10px;
 }

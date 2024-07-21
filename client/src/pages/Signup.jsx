@@ -42,7 +42,7 @@ export default function Signup(){
             name="email"
             id="email"
             type="email"
-            className="input-field" // Apply same style as home page input
+            className="input-field" 
           />
         </div>
         <div className="form-group">
@@ -51,8 +51,8 @@ export default function Signup(){
             onChange={(e) => setName(e.target.value)}
             name="name"
             id="name"
-            type="name" // Assuming you meant 'text' for name input
-            className="input-field" // Apply same style as home page input
+            type="name"
+            className="input-field" 
           />
         </div>
         <div className="form-group">
@@ -62,7 +62,7 @@ export default function Signup(){
             name="password"
             id="password"
             type="password"
-            className="input-field" // Apply same style as home page input
+            className="input-field" 
           />
         </div>
         <button className="create-button mr">Sign up</button>
