@@ -68,6 +68,14 @@ h1 {
   width: 200px;
   height: 200px;
   margin: 10px;
+  position: relative;
+}
+
+.delete-icon{
+  cursor: pointer;
+  right: 20px;
+  bottom: 10px;
+  position: absolute;
 }
 
 .note::before,

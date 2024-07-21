@@ -53,6 +53,19 @@ export default function Home() {
         setText("")
     }
 
+    async function deleteNote(id){
+        const res = await fetch(`/api/note?id=${id}`,{
+            method:"DELETE"
+        })
+
+        if(res.status !== 200){
+            console.error(await res.text())
+            return;
+        }
+
+        setNotes(notes.filter(n => n._id !== id))
+    }
+
     return !user ? <h1>loading</h1> : (
         <main className="stack">
             <h1 className="mb2">Hello {user.name}</h1>
@@ -65,6 +78,7 @@ export default function Home() {
                 {notes.map(n => (
                     <div className="note" key={n._id}>
                         {n.text}
+                        <span onClick={() => deleteNote(n._id)} className="material-icons delete-icon">delete</span>
                     </div>
                 ))}
             </div>
