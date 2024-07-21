@@ -31,20 +31,36 @@ export default function Login(){
     }
 
     return <>
-        <h1>Login</h1>
-        <form onSubmit={submit} id="login-form" action="#">
-            <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input onChange={(e) => setEmail(e.target.value)} name="email" id="email" type="email"/>
-            </div>
-            <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input onChange={(e) => setPassword(e.target.value)} name="password" id="password" type="password"/>
-            </div>
-            <button>Login</button>
+    <div className="login-container">
+      <h1>Login</h1>
+      <form onSubmit={submit} id="login-form" action="#">
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            name="email"
+            id="email"
+            type="email"
+            className="input-field" // Apply same style as home page input
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            name="password"
+            id="password"
+            type="password"
+            className="input-field" // Apply same style as home page input
+          />
+        </div>
+        <button className="create-button mr">Login</button>
 
-            <Link to="/signup">Don't have an acoount? Sign up!</Link>
-            {!!feedBack && <p className="feedback">{feedBack}</p>}
-        </form>
+        <Link to="/signup" className="link">
+          Don't have an acoount? Sign up!
+        </Link>
+        {!!feedBack && <p className="feedback">{feedBack}</p>}
+      </form>
+    </div>
     </>
 }

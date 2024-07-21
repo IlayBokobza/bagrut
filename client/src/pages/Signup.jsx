@@ -32,23 +32,46 @@ export default function Signup(){
     }
 
     return <>
-        <h1>Sign Up</h1>
-        <form onSubmit={submit} action="#" id="signup-form">
-            <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input onChange={(e) => setEmail(e.target.value)} name="email" id="email" type="email"/>
-            </div>
-            <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input onChange={(e) => setName(e.target.value)} name="name" id="name" type="name"/>
-            </div>
-            <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input onChange={(e) => setPassword(e.target.value)} name="password" id="password" type="password"/>
-            </div>
-            <button>Sign up</button>
-            <Link to="/login">Already have an account? Login!</Link>
-            {!!feedBack && <p className="feedback">{feedBack}</p>}
-        </form>
+    <div className="signup-container">
+      <h1>Sign Up</h1>
+      <form onSubmit={submit} action="#" id="signup-form">
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            name="email"
+            id="email"
+            type="email"
+            className="input-field" // Apply same style as home page input
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            onChange={(e) => setName(e.target.value)}
+            name="name"
+            id="name"
+            type="name" // Assuming you meant 'text' for name input
+            className="input-field" // Apply same style as home page input
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            name="password"
+            id="password"
+            type="password"
+            className="input-field" // Apply same style as home page input
+          />
+        </div>
+        <button className="create-button mr">Sign up</button>
+
+        <Link to="/login" className="link">
+          Already have an account? Login!
+        </Link>
+        {!!feedBack && <p className="feedback">{feedBack}</p>}
+      </form>
+    </div>
     </>
 }
