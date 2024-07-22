@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
 import {useState} from "react";
 import Cookies from "js-cookie";
 
@@ -6,6 +6,7 @@ export default function Login(){
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
     const [feedBack,setFeedback] = useState("")
+    const navigate = useNavigate()
 
     async function submit(e){
         e.preventDefault()
@@ -27,8 +28,9 @@ export default function Login(){
         setFeedback("")
         const token = await res.text()
         Cookies.set('token',token)
-        location.reload()
+        navigate('/')
     }
+    
 
     return <>
     <div className="login-container">
